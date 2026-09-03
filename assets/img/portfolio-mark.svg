@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">Portfolio monogram</title>
+  <desc id="desc">Een eenvoudig beeldmerk met de letters MP voor Mijn Portfolio.</desc>
+  <rect width="96" height="96" rx="16" fill="#0f6f72"/>
+  <path d="M21 67V29h9l13 20 13-20h9v38h-10V47L46 61h-6l-9-14v20H21Z" fill="#fff"/>
+  <path d="M67 67V29h9v38h-9Z" fill="#f0c85a"/>
+</svg>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Blogoverzicht met reflecties over webontwikkeling en portfolio-opbouw."
+    >
+    <title>Blog | Portfolio</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Naar de whoami-pagina">
+        <img src="assets/img/portfolio-mark.svg" alt="Portfolio monogram" width="44" height="44">
+        <span>Mijn Portfolio</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Hoofdnavigatie">
+        <ul>
+          <li><a href="index.html">Whoami</a></li>
+          <li><a href="projecten.html">Projecten</a></li>
+          <li><a href="blog.html" aria-current="page">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-heading" aria-labelledby="blog-title">
+        <p class="eyebrow">Blog</p>
+        <h1 id="blog-title">Reflecties en leerpunten</h1>
+        <p>
+          In dit blogoverzicht staan korte berichten over keuzes, feedback en
+          technische onderwerpen die bij mijn portfolio horen.
+        </p>
+      </section>
+
+      <section class="post-list" aria-label="Blogposts">
+        <article class="post-preview">
+          <div>
+            <p class="post-date">3 september 2026</p>
+            <h2>Waarom ik begin met semantische HTML</h2>
+          </div>
+          <p>
+            Semantische elementen maken de structuur van de pagina duidelijker voor
+            browsers, zoekmachines en hulpmiddelen zoals schermlezers.
+          </p>
+          <a href="docs/onderbouwing.md">Lees de onderbouwing</a>
+        </article>
+
+        <article class="post-preview">
+          <div>
+            <p class="post-date">3 september 2026</p>
+            <h2>Mijn eerste responsive keuzes</h2>
+          </div>
+          <p>
+            Ik heb gekozen voor flexibele grids, leesbare regelbreedtes en
+            breekpunten die aansluiten bij mobiel, tablet en desktop.
+          </p>
+          <a href="docs/onderbouwing.md">Bekijk ontwerpkeuzes</a>
+        </article>
+
+        <article class="post-preview">
+          <div>
+            <p class="post-date">3 september 2026</p>
+            <h2>Wat gebeurt er bij een paginaverzoek?</h2>
+          </div>
+          <p>
+            De browser vraagt een HTML-bestand op, ontvangt de pagina en haalt daarna
+            de gekoppelde CSS en afbeeldingen op.
+          </p>
+          <a href="docs/request-response.md">Bekijk het schema</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Mijn Portfolio. Blogposts kunnen later als losse detailpagina's worden toegevoegd.</p>
+    </footer>
+  </body>
+</html>
