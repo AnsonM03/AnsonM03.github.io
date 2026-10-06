@@ -286,6 +286,96 @@ main {
   padding: 1.5rem 1rem;
 }
 
+.project-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 1rem 2rem;
+  margin-bottom: 1rem;
+  padding: 1.25rem;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+}
+
+.project-controls h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.project-controls label,
+.form-field label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+}
+
+.project-controls select,
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  color: var(--color-ink);
+  background: var(--color-surface);
+  font: inherit;
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+.project-controls select:focus-visible,
+.form-field input:focus-visible,
+.form-field textarea:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+#project-count {
+  margin: 0 0 1rem;
+  color: var(--color-muted);
+  font-weight: 700;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 45rem;
+}
+
+.form-field {
+  display: grid;
+}
+
+.form-error {
+  margin: 0.4rem 0 0;
+  color: #9f1d1d;
+  font-weight: 700;
+}
+
+.form-status {
+  margin: 0;
+  font-weight: 700;
+}
+
+#weather-status {
+  margin-top: 1rem;
+  color: var(--color-muted);
+}
+
+#weather-result p {
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+button.button {
+  cursor: pointer;
+  font: inherit;
+}
+
 @media (max-width: 768px) {
   .site-header,
   .intro-section,

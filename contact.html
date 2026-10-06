@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Contactpagina van mijn persoonlijke portfolio."
+    >
+    <title>Contact | Portfolio</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/contact.js" defer></script>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Naar de whoami-pagina">
+        <img
+          src="assets/img/portfolio-mark.svg"
+          alt="Portfolio monogram"
+          width="44"
+          height="44"
+        >
+        <span>Mijn Portfolio</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Hoofdnavigatie">
+        <ul>
+          <li><a href="index.html">Whoami</a></li>
+          <li><a href="projecten.html">Projecten</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-heading" aria-labelledby="contact-title">
+        <p class="eyebrow">Contact</p>
+        <h1 id="contact-title">Neem contact met mij op</h1>
+        <p>
+          Heb je een vraag over mijn projecten of wil je samenwerken? Laat dan
+          een bericht achter.
+        </p>
+      </section>
+
+      <section class="content-band" aria-labelledby="form-title">
+        <div class="section-heading">
+          <h2 id="form-title">Contactformulier</h2>
+        </div>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-field">
+            <label for="name">Naam</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              autocomplete="name"
+              aria-describedby="name-error"
+            >
+            <p id="name-error" class="form-error" role="alert" hidden></p>
+          </div>
+
+          <div class="form-field">
+            <label for="email">E-mailadres</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              aria-describedby="email-error"
+            >
+            <p id="email-error" class="form-error" role="alert" hidden></p>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Bericht</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="7"
+              aria-describedby="message-error"
+            ></textarea>
+            <p id="message-error" class="form-error" role="alert" hidden></p>
+          </div>
+
+          <button class="button primary" type="submit">
+            Verstuur bericht
+          </button>
+
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+
+          <dialog id="thank-you-dialog" aria-labelledby="dialog-title">
+            <h2 id="dialog-title">Bedankt voor je bericht!</h2>
+            <p>
+            Je bericht is gecontroleerd. Ik neem zo snel mogelijk contact met je op.
+        </p>
+
+        <button id="close-dialog" class="button primary" type="button">
+            Sluiten
+        </button>
+        </dialog>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Mijn Portfolio.</p>
+    </footer>
+  </body>
+</html>

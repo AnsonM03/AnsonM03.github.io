@@ -9,19 +9,27 @@
     >
     <title>Projecten | Portfolio</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/projecten.js" defer></script>
   </head>
+
   <body>
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Naar de whoami-pagina">
-        <img src="assets/img/portfolio-mark.svg" alt="Portfolio monogram" width="44" height="44">
+        <img
+          src="assets/img/portfolio-mark.svg"
+          alt="Portfolio monogram"
+          width="44"
+          height="44"
+        >
         <span>Mijn Portfolio</span>
       </a>
 
       <nav class="site-nav" aria-label="Hoofdnavigatie">
         <ul>
           <li><a href="index.html">Whoami</a></li>
-          <li><a href="projecten.html" aria-current="page">Projecten</a></li>
+          <li><a href="projecten.html" aria-current="page">Projecten</a>
           <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -31,88 +39,44 @@
         <p class="eyebrow">Projecten</p>
         <h1 id="projects-title">Projecten die ik heb gemaakt</h1>
         <p>
-          Hieronder zie je mijn gemaakte school/hobby projecten
+          Hieronder staan mijn school- en hobbyprojecten. Je kunt de projecten
+          filteren en sorteren.
         </p>
       </section>
 
-      <section class="card-grid" aria-label="Projectkaarten">
-        <article class="card">
-          <p class="tag">HTML | API's</p>
-          <h2>Flores Fuertes</h2>
-          <p>
-          Voor dit schoolproject heb ik gewerkt aan een website
-          met HTML en API-koppelingen. Hierbij heb ik geoefend
-          met de communicatie tussen de website en een API.
-          </p>
+      <section class="project-controls" aria-labelledby="filter-title">
+        <div>
+          <h2 id="filter-title">Projecten filteren</h2>
 
-          <ul class="meta-list">
-            <li>Bijdrage: websiteontwikkeling en API-koppelingen</li>
-            <li>Context: schoolproject</li>
-          </ul>
+          <label for="category-filter">Categorie</label>
+          <select id="category-filter">
+            <option value="alle">Alle categorieën</option>
+            <option value="web">Webontwikkeling</option>
+            <option value="data">Data engineering</option>
+            <option value="java">Java</option>
+          </select>
+        </div>
 
-          <a class="secondary button"
-           href="https://github.com/AnsonM03/Flores-Fuertes"
-           target="_blank"
-           rel="noopener noreferrer"
-           >
-              Bekijk mijn code op github
-          </a>
-         </article>
-
-        <article class="card">
-          <p class="tag">Python | SQL | Power BI</p>
-          <h2>Data Engineering</h2>
-
-          <p>
-            Een schoolproject rond het verwerken en analyseren van
-          gegevens van Great Outdoors. Het project bevat een
-          datapipeline, een datawarehouse en notebooks voor
-          onderzoek naar bestelgedrag, aangevuld met een
-          Power BI-dashboard.
-          </p>
-
-          <ul class="meta-list">
-          <li>Focus: dataverwerking en analyse</li>
-          <li>Onderdelen: Python-notebooks, databases en dashboard</li>
-          </ul>
-
-          <a class="secondary button" 
-          href="https://github.com/AnsonM03/DEAI-SE4"
-          target="_blank"
-          rel="noopener noreferrer"
-          > Bekijk de code op github 
-        </a>
-        </article>
-
-        <article class="card">
-          <p class="tag">Java</p>
-          <h2>OPT3 - Scrumspel</h2>
-           <p>
-          Een schoolproject waarin een spel is opgebouwd met Java.
-          De code is verdeeld over onderdelen voor spelers, kamers,
-          items en opdrachten. Het project bevat daarnaast tests
-          om de werking van de code te controleren.
-          </p>
-          
-         <ul class="meta-list">
-          <li>Focus: objectgeoriënteerd programmeren en testen</li>
-          <li>Onderdelen: spellogica, spelers en kamers</li>
-        </ul>
-        
-        <a
-        class="button secondary"
-        href="https://github.com/AnsonM03/OPT3"
-        target="_blank"
-        rel="noopener noreferrer"
-        >
-        Bekijk de code op github
-        </a>
-        </article>
+        <div>
+          <label for="sort-projects">Sorteer op</label>
+          <select id="sort-projects">
+            <option value="az">Naam: A tot Z</option>
+            <option value="za">Naam: Z tot A</option>
+          </select>
+        </div>
       </section>
+
+      <p id="project-count" aria-live="polite"></p>
+
+      <section
+        id="project-list"
+        class="card-grid"
+        aria-label="Projectkaarten"
+      ></section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; Mijn gemaakte projecten</p>
+      <p>&copy; 2026 Mijn gemaakte projecten</p>
     </footer>
   </body>
 </html>

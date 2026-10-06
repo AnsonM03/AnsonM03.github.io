@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="nl">
   <head>
+    <script src="assets/js/weerbericht.js" defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
@@ -22,15 +23,33 @@
           <li><a href="index.html" aria-current="page">Whoami</a></li>
           <li><a href="projecten.html">Projecten</a></li>
           <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
+
+    <section class="content-band" aria-labelledby="weather-title">
+  <div class="section-heading">
+    <p class="eyebrow">Actuele gegevens</p>
+    <h2 id="weather-title">Het weer in Den Haag</h2>
+  </div>
+
+  <button id="refresh-weather" class="button secondary" type="button">
+    Vernieuw weerbericht
+  </button>
+
+  <p id="weather-status" role="status" aria-live="polite">
+    Weerbericht wordt geladen.
+  </p>
+
+  <div id="weather-result"></div>
+</section>
 
     <main>
       <section class="intro-section" aria-labelledby="intro-title">
         <div class="intro-copy">
           <p class="eyebrow">Software engineering student</p>
-          <h1 id="intro-title">Ik bouw digitale oplossingen die duidelijk, bruikbaar en leerbaar zijn.</h1>
+          <h1 id="intro-title">Welkom op mijn portfolio website. Ik bouw weboplossingen die bruikbaar zijn.</h1>
           <p>
             Welkom op mijn portfolio. Hier beschrijf ik wie ik ben, welke projecten ik maak en wat ik leer.
             Hier beschrijf ik wat ik heb geleerd de afgelopen maanden.
