@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Portfolio.Api.Data;
+using Portfolio.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +20,9 @@ var connectionString = builder.Configuration
 builder.Services.AddDbContext<PortfolioDbContext>(options =>
     options.UseSqlServer(connectionString)
 );
+
+builder.Services.AddScoped<ProjectService>();
+builder.Services.AddScoped<BlogpostService>();
 
 var app = builder.Build();
 
